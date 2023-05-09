@@ -1,0 +1,48 @@
+.mainCoutainerFour {
+  background-color: #141414;
+  .article {
+    width: 80%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 60px;
+    align-items: center;
+    .articleContainer {
+      .imageContainer {
+        .image {
+          width: 100%;
+          height: 50%;
+        }
+      }
+      .text {
+        .headingOne {
+          color: white;
+          font-weight: 900;
+          font-size: 52px;
+          line-height: 105px;
+          text-transform: uppercase;
+        }
+        .pragraph {
+          color: white;
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 128%;
+          text-align: justify;
+        }
+        .button {
+          background: red;
+          padding: 10px 15px;
+          color: white;
+          border: none;
+        }
+      }
+    }
+    .articleContainer1 {
+      height: 67.5%;
+      .image1 {
+        height: 100%;
+      }
+    }
+  }
+}
