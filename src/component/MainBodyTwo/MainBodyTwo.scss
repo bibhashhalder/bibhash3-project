@@ -1,0 +1,43 @@
+.mainbodytwo {
+  background: #212122fd;
+  // height: 100vh;
+  padding-bottom: 15px;
+  .mainbodycontainer {
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    .article {
+      width: 571px;
+      height: 348px;
+      .heading5 {
+        color: red;
+      }
+      .heading1 {
+        line-height: 121.69%;
+        font-size: 95px;
+        color: white;
+      }
+    }
+    .article2 {
+      width: 790px;
+      width: 348px;
+      padding-top: 33px;
+      .pragraph {
+        font-size: 18.3px;
+        width: 80%;
+        color: white;
+      }
+    }
+  }
+  .product {
+    margin-top: 25px;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+  }
+}

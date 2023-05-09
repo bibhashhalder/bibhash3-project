@@ -1,0 +1,37 @@
+.product {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 15px;
+  .productElement {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    &:hover {
+      border: 1px solid #dd0707;
+    }
+  }
+  p {
+    width: 165px;
+    height: 35px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 12px;
+  }
+  .iconContainer {
+    display: flex;
+    margin-left: 0;
+    .iconFirst {
+      margin-right: 8px;
+    }
+    .icons {
+      color: red;
+    }
+    .icon {
+      color: #00b13c;
+    }
+    span {
+      margin-left: 5px;
+      font-size: 10px;
+    }
+  }
+}

@@ -39,9 +39,12 @@
     }
   }
   .articleContainer {
+    width: 80%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
     .article1 {
       display: flex;
       align-items: center;
@@ -51,6 +54,7 @@
         width: 60%;
         text-transform: uppercase;
         h1 {
+          margin-bottom: 20px;
           color: white;
           font-size: 40px;
           span {
@@ -58,9 +62,23 @@
           }
         }
         h5 {
+          margin-bottom: 20px;
           color: white;
           span {
             color: red;
+          }
+        }
+        .button {
+          padding: 10px 15px;
+          background-color: red;
+          color: white;
+          border: none;
+          display: flex;
+          .icons {
+            padding-right: 15px;
+          }
+          .span {
+            margin-top: -20px;
           }
         }
       }
