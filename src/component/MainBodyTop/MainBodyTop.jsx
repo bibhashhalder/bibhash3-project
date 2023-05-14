@@ -1,6 +1,20 @@
+import { useRef, useState } from "react";
 import "./MainBodyTop.scss";
-import { FaPlay } from "react-icons/fa";
+import video from "../../../public/videos/bv4.webm";
+import { FaPause, FaPlay } from "react-icons/fa";
 export default function MainBodyTop() {
+  const [playButton, setPlayButton] = useState(false);
+  const vidRef = useRef();
+  const handleButton = () => {
+    if (playButton) {
+      vidRef.current.play();
+      setPlayButton(!playButton);
+    } else {
+      vidRef.current.pause();
+      setPlayButton(!playButton);
+    }
+  };
+
   return (
     <div className="mainbodytop">
       <nav className="navbar">
@@ -34,8 +48,20 @@ export default function MainBodyTop() {
               This is my story about <span>Dr.Serhat</span>
             </h1>
             <button className="button">
-              <div>
-                <FaPlay className="icons" style={{ fontSize: "20px" }} />
+              <div className="icon">
+                {playButton ? (
+                  <FaPlay
+                    onClick={handleButton}
+                    className="icons"
+                    style={{ fontSize: "20px" }}
+                  />
+                ) : (
+                  <FaPause
+                    onClick={handleButton}
+                    className="icons"
+                    style={{ fontSize: "20px" }}
+                  />
+                )}
               </div>
               <div>
                 <span className="span">Watch video</span>
@@ -44,7 +70,9 @@ export default function MainBodyTop() {
           </div>
         </div>
         <div className="img">
-          <img className="image" src="../../../public/image/bd0.png" alt="" />
+          <video ref={vidRef} width="400px " height="300px">
+            <source src={[video]} type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>

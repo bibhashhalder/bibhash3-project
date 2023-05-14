@@ -74,11 +74,17 @@
           color: white;
           border: none;
           display: flex;
-          .icons {
-            padding-right: 15px;
+          .icon {
+            // position: relative;
+            .icons {
+              // position: absolute;
+              padding-right: 15px;
+            }
           }
+
           .span {
             margin-top: -20px;
+            // margin-left: 30px;
           }
         }
       }
