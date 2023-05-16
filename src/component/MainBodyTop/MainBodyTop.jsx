@@ -7,10 +7,10 @@ export default function MainBodyTop() {
   const vidRef = useRef();
   const handleButton = () => {
     if (playButton) {
-      vidRef.current.play();
+      vidRef.current.pause();
       setPlayButton(!playButton);
     } else {
-      vidRef.current.pause();
+      vidRef.current.play();
       setPlayButton(!playButton);
     }
   };
@@ -50,13 +50,13 @@ export default function MainBodyTop() {
             <button className="button">
               <div className="icon">
                 {playButton ? (
-                  <FaPlay
+                  <FaPause
                     onClick={handleButton}
                     className="icons"
                     style={{ fontSize: "20px" }}
                   />
                 ) : (
-                  <FaPause
+                  <FaPlay
                     onClick={handleButton}
                     className="icons"
                     style={{ fontSize: "20px" }}
